@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>PETIR800 - Anime Power</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at top, #0f2027, #000);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* PETIR ANIMATION */
+        .lightning {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            width: 2px;
+            height: 300px;
+            background: linear-gradient(transparent, #00f7ff, transparent);
+            animation: flash 2s infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes flash {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            color: #00f7ff;
+            text-shadow: 0 0 20px #00f7ff;
+            letter-spacing: 4px;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 40px 20px;
+            align-items: center;
+        }
+
+        .hero-text h2 {
+            font-size: 2.5rem;
+            color: #ffea00;
+            text-shadow: 0 0 15px #ffea00;
+        }
+
+        .hero-text p {
+            margin-top: 20px;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        .hero-text button {
+            margin-top: 30px;
+            padding: 15px 40px;
+            font-size: 1rem;
+            background: linear-gradient(45deg, #00f7ff, #ffea00);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            color: #000;
+            font-weight: bold;
+            box-shadow: 0 0 20px #00f7ff;
+            transition: 0.3s;
+        }
+
+        .hero-text button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 35px #ffea00;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 380px;
+            filter: drop-shadow(0 0 30px #00f7ff);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+
+        .features {
+            background: #020c12;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            color: #00f7ff;
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(0,247,255,0.3);
+            transition: 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px #00f7ff;
+        }
+
+        .feature h3 {
+            color: #ffea00;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lightning"></div>
+
+    <header>
+        <h1>PETIR800</h1>
+        <p>Kekuatan Anime • Kecepatan Petir • Dunia Masa Depan</p>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Bangkitkan Kekuatan Petirmu ⚡</h2>
+            <p>
+                PETIR800 adalah simbol kecepatan, kekuatan, dan energi tanpa batas.
+                Terinspirasi dari dunia anime futuristik, kami menghadirkan pengalaman
+                yang penuh aksi, gaya, dan visual yang memukau.
+            </p>
+            <button>MASUK SEKARANG</button>
+        </div>
+
+        <div class="hero-image">
+            <!-- Ganti src dengan gambar anime kamu -->
+            <img src="https://www.pngall.com/wp-content/uploads/14/Killua-PNG-Photos.png" alt="Anime Character">
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Fitur PETIR800</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>⚡ Kecepatan Petir</h3>
+                <p>Akses super cepat dengan performa maksimal.</p>
+            </div>
+            <div class="feature">
+                <h3>🔥 Desain Anime</h3>
+                <p>Visual futuristik bergaya anime yang memikat.</p>
+            </div>
+            <div class="feature">
+                <h3>🌀 Energi Tanpa Batas</h3>
+                <p>Siap menemani setiap petualanganmu.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 PETIR800 • Power of Lightning
+    </footer>
+
+</body>
+</html>
